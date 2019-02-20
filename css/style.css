@@ -69,6 +69,7 @@ a {
 }
 
 .main-header {
+  min-width: 1200px;
   min-height: 800px;
   background-image: url("../img/background-header.jpg");
   background-repeat: no-repeat;
