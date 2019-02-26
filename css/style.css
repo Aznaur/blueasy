@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 1200px;
   font-family: "Segoe UI", "Source Sans Pro", sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -44,9 +45,8 @@ a {
 
 .navigation-list {
   display: flex;
-  width: 670px;
+  width: 551px;
   flex-wrap: wrap;
-  justify-content: space-between;
   min-width: 543px;
   box-sizing: border-box;
 }
@@ -89,6 +89,14 @@ a {
   border: 2px solid transparent;
 }
 
+.navigation-list li {
+  margin-right: 11px;
+}
+
+.navigation-list li:last-of-type {
+  margin-right: 0;
+}
+
 .navigation-list a:hover {
   border: 2px solid #4bcaff;
   color: #4bcaff;
@@ -110,9 +118,9 @@ a {
   margin-bottom: 12px;
 }
 
-/* .service {
+.service {
   background-color: #4bcaff;
-  min-height: 405px;
+  min-height: 250px;
   padding-top: 80px;
   padding-bottom: 75.5px;
 }
@@ -145,5 +153,59 @@ a {
 }
 
 .service-item {
+  position: relative;
   width: 270px;
-} */
+  padding-top: 104px;
+}
+
+.service-item h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.coffee::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20%;
+  width: 34px;
+  height: 48px;
+  background-image: url("../img/coffee.png");
+  background-repeat: no-repeat;
+}
+
+.instant::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20%;
+  width: 48px;
+  height: 48px;
+  background-image: url("../img/instant.png");
+  background-repeat: no-repeat;
+}
+
+.serious::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20%;
+  width: 47px;
+  height: 45px;
+  background-image: url("../img/serious.png");
+  background-repeat: no-repeat;
+}
+
+.frame::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20%;
+  width: 48px;
+  height: 48px;
+  background-image: url("../img/frame.png");
+  background-repeat: no-repeat;
+}
