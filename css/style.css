@@ -20,7 +20,7 @@ a {
 }
 
 .container {
-  width: 1150px;
+  width: 1170px;
   padding-left: 10px;
   padding-right: 10px;
   margin: 0 auto;
@@ -38,7 +38,8 @@ a {
 
 
 .navigation-list,
-.portfolio-nav {
+.portfolio-nav,
+.portfolio-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -248,4 +249,25 @@ a {
   height: 48px;
   background-image: url("../img/frame.png");
   background-repeat: no-repeat;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 570px;
+}
+
+.portfolio-list li {
+  width: 270px;
+  height: 270px;
+  background-color: #979797;
+  margin-right: 30px;
+}
+
+.portfolio-list li:nth-of-type(4n) {
+  margin-right: 0;
+}
+
+.portfolio-list img{
+  opacity: 0.5;
 }
