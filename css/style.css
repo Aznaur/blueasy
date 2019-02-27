@@ -5,7 +5,7 @@ body {
   font-family: "Segoe UI", "Source Sans Pro", sans-serif;
   font-size: 14px;
   line-height: 24px;
-  background-color: #beccd5;
+  background-color: #ffffff;
   color: #ffffff;
 }
 
@@ -37,13 +37,19 @@ a {
 
 
 
-.navigation-list {
+.navigation-list,
+.portfolio-nav {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.navigation-list {
+.portfolio-nav {
+  align-self: flex-end;
+}
+
+.navigation-list,
+.portfolio-nav {
   display: flex;
   width: 551px;
   flex-wrap: wrap;
@@ -51,16 +57,9 @@ a {
   box-sizing: border-box;
 }
 
-.navigation-list a {
-  color: #ffffff;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.min-navigation {
+.main-navigation {
   box-sizing: border-box;
   min-height: 150px;
-
   background-color: rgba(53, 63, 70, 0.85);
   padding-top: 58px;
   margin-bottom: 250px;
@@ -79,7 +78,8 @@ a {
   background-size: cover;
 }
 
-.navigation-list a {
+.navigation-list a,
+.portfolio-nav a  {
   display: block;
   padding-left:18px;
   padding-right: 17px;
@@ -87,17 +87,27 @@ a {
   padding-bottom: 3px;
   box-sizing: border-box;
   border: 2px solid transparent;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-.navigation-list li {
+.portfolio-nav a {
+  color: #515f67;
+}
+
+.navigation-list li,
+.portfolio-nav li{
   margin-right: 11px;
 }
 
-.navigation-list li:last-of-type {
+.navigation-list li:last-of-type,
+.portfolio-nav li:last-of-type{
   margin-right: 0;
 }
 
-.navigation-list a:hover {
+.navigation-list a:hover,
+.portfolio-nav a:hover {
   border: 2px solid #4bcaff;
   color: #4bcaff;
 }
@@ -121,21 +131,51 @@ a {
 .service {
   background-color: #4bcaff;
   min-height: 250px;
-  padding-top: 80px;
+  padding-top: 70px;
   padding-bottom: 75.5px;
 }
 
-.service-title {
+.portfolio {
+  min-height: 844px;
+  padding-top: 70px;
+  padding-bottom: 75.5px;
+}
+
+.section-title {
+  position: relative;
   margin: 0;
   padding: 0;
   font-size: 30px;
-  color: white;
+  line-height: 45px;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
-.service-title span {
-  border-bottom: 2px solid white;
+.section-title::before {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 2px;
+  bottom: -2px;
 }
+
+.service-title {
+  color: white;
+}
+
+.portfolio-title {
+  color: #515f67;
+}
+
+.portfolio-title::before {
+  background-color: #515f67;
+}
+
+.service-title::before {
+  background-color: #ffffff;
+}
+
+
 
 .service-list p {
   margin: 0;
