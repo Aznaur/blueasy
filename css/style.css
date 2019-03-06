@@ -283,3 +283,35 @@ a {
   background-color: rgba(53, 63, 71, 0.9);
   z-index: 1;
 }
+
+.video {
+  min-height: 473px;
+  background-color: #515f67;
+  padding-top: 70px;
+  padding-bottom: 75.5px;
+  box-sizing: border-box;
+}
+
+.video-title::before {
+  background-color: #ffffff;
+}
+
+.description-video {
+  width: 470px;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  width: 140px;
+  padding: 11.5px 0;
+  border: 1px solid #353f46;
+  color: #353f46;
+  box-sizing: border-box;
+}
+
+.btn:hover {
+  background-color: #353f46;
+  color: #ffffff;
+}
