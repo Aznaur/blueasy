@@ -309,9 +309,15 @@ a {
   border: 1px solid #353f46;
   color: #353f46;
   box-sizing: border-box;
+  margin-top: 5px;
 }
 
 .btn:hover {
   background-color: #353f46;
   color: #ffffff;
+}
+
+.wrapper-video {
+  display: flex;
+  justify-content: space-between;
 }
