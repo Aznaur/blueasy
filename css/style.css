@@ -285,7 +285,7 @@ a {
 }
 
 .video {
-  min-height: 473px;
+  min-height: 450px;
   background-color: #515f67;
   padding-top: 70px;
   padding-bottom: 75.5px;
@@ -320,4 +320,21 @@ a {
 .wrapper-video {
   display: flex;
   justify-content: space-between;
+}
+
+.twitter {
+  background-color: #4bcaff;
+  padding-top: 70px;
+  padding-bottom: 75.5px;
+  box-sizing: border-box;
+}
+
+.twitter-title::before {
+  background-color: #ffffff;
+}
+
+.twitter p {
+  font-size: 28px;
+  line-height: 50px;
+  font-weight: lighter;
 }
