@@ -323,6 +323,7 @@ a {
 }
 
 .twitter {
+  position: relative;
   background-color: #4bcaff;
   padding-top: 70px;
   padding-bottom: 75.5px;
@@ -337,4 +338,16 @@ a {
   font-size: 28px;
   line-height: 50px;
   font-weight: lighter;
+}
+
+.social-tw {
+  position: absolute;
+  right: 10%;
+  top: 80px;
+  width: 26px;
+  height: 22px;
+  background-image: url("../img/tw.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
 }
