@@ -39,7 +39,9 @@ a {
 
 .navigation-list,
 .portfolio-nav,
-.portfolio-list {
+.portfolio-list,
+.about-title-list,
+.social-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -367,4 +369,52 @@ a {
 
 .about-title::before {
   background-color: #ffffff;
+}
+
+.social-list {
+  display: flex;
+}
+
+.social-items {
+  display: flex;
+  width: 64px;
+  height: 64px;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  margin-right: 20px;
+}
+
+.social-items:last-of-type {
+  margin-right: 0;
+}
+
+.icon {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.icon svg {
+  margin: auto;
+}
+
+.icon:hover {
+  background-color: #ffffff;
+}
+.icon:hover svg {
+  fill: #000000;
+}
+
+
+.icon-tw {
+
+}
+
+.icon-google_plus {
+
+}
+
+.icon-dr {
+
 }
