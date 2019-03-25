@@ -423,3 +423,28 @@ a {
 .social {
   align-self: center;
 }
+
+.feedback {
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 75.5px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #515f67;
+}
+
+.feedback-title::before {
+  background-color: #515f67;
+}
+
+.author-text {
+  color: #4bcaff;
+  font-weight: bold;
+}
+
+.feedback p {
+  width: 1054px;
+  font-size: 28px;
+  line-height: 50px;
+  font-weight: lighter;
+}
