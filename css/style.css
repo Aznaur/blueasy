@@ -354,6 +354,18 @@ a {
   background-size: contain;
 }
 
+.quote-icon {
+  position: absolute;
+  right: 4%;
+  top: 80px;
+  width: 32px;
+  height: 26px;
+  background-image: url("../img/quote-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
 .about {
   position: relative;
   width: 100%;
