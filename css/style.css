@@ -42,7 +42,8 @@ a {
 .portfolio-nav,
 .portfolio-list,
 .about-title-list,
-.social-list {
+.social-list,
+.footer-nav {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -545,4 +546,52 @@ a {
   color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+
+.main-footer {
+  width: 100%;
+  min-height: 170px;
+  background-color: #353f47;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.footer-items {
+  margin-right: 30px;
+  position: relative;
+}
+
+.footer-items a{
+  color: #515f67;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.footer-items a::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: -14px;
+  width: 1px;
+  height: 12px;
+  background-color: #515f67;
+}
+
+.contact-items a::after {
+  width: 0;
+  height: 0;
+}
+
+.footer-nav {
+  display: flex;
+}
+
+.copyright {
+  color: #515f67;
+  margin-left: auto;
 }
