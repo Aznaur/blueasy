@@ -174,29 +174,25 @@
       <div class="container">
         <h2 class="section-title contact-title">Contact</h2>
         <form action="#" method="post" class="form-contact">
-          <ul class="contact-list">
-            <li class="contact-items name-items">
-              <label for="name-field">full name</label>
-              <input type="text" name="name" id="name-field">
-              <p>Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar. Sweet lollipop halvah tootsie roll cake fruitcake. Chocolate cake chocolate bar gingerbread lollipop tart. Jujubes bear claw donut chupa chups.</p>
-            </li>
-            <li class="contact-items email-items">
-              <label for="email-field">email</label>
-              <input type="text" name="email" id="email-field">
-              <p>Linda Newman
-                 W325 State Road 123
-                 Mondovi, WI(Wisconsin) 98746-54321
-                 (715) 946 - 1234
-              </p>
-            </li>
-            <li class="contact-items">
-              <label for="message-field">message</label>
-              <textarea rows="10" name="message" id="message-field"></textarea>
-            </li>
-            <li class="contact-items">
-              <button type="submit">message</button>
-            </li>
-          </ul>
+          <div class="wrapper-name">
+            <label for="name-field">full name</label>
+            <input type="text" name="name" id="name-field">
+            <p class="wrapper-name-text">Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar. Sweet lollipop halvah tootsie roll cake fruitcake. Chocolate cake chocolate bar gingerbread lollipop tart. Jujubes bear claw donut chupa chups.</p>
+          </div>
+          <div class="wrapper-email">
+            <label for="email-field">email</label>
+            <input type="text" name="email" id="email-field">
+            <p class="wrapper-email-text">Linda Newman<br>
+                 W325 State Road 123<br>
+                 Mondovi, WI(Wisconsin) 98746-54321<br>
+                 (715) 946 - 1234<br>
+            </p>
+          </div>
+          <div class="wrapper-message">
+            <label for="message-field">message</label>
+            <textarea rows="10" name="message" id="message-field"></textarea>
+          </div>
+          <button class="btn-form" type="submit">message</button>
         </form>
       </div>
     </section>

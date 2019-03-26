@@ -20,6 +20,7 @@ a {
 }
 
 .container {
+  position: relative;
   width: 1170px;
   padding-left: 10px;
   padding-right: 10px;
@@ -41,8 +42,7 @@ a {
 .portfolio-nav,
 .portfolio-list,
 .about-title-list,
-.social-list,
-.contact-list {
+.social-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -345,8 +345,8 @@ a {
 
 .social-tw {
   position: absolute;
-  right: 4%;
-  top: 80px;
+  right: 0;
+  top: 0;
   width: 26px;
   height: 22px;
   background-image: url("../img/tw.svg");
@@ -357,8 +357,8 @@ a {
 
 .quote-icon {
   position: absolute;
-  right: 4%;
-  top: 80px;
+  right: 0;
+  top: 0;
   width: 32px;
   height: 26px;
   background-image: url("../img/quote-icon.svg");
@@ -490,7 +490,7 @@ a {
 }
 
 .form-contact input[type="text"] {
-  width: 100%;
+  width: 470px;
   height: 50px;
   border: 2px solid #ffffff;
   box-sizing: border-box;
@@ -508,15 +508,41 @@ a {
   padding-left: 30px;
 }
 
-
-
-.name-items,
-.email-items {
-  width: 470px;
+.wrapper-name,
+.wrapper-email {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.contact-items {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 35px;
+.wrapper-name label{
+  position: absolute;
+  top: -15px;
+}
+
+.wrapper-email label {
+  position: absolute;
+  top: -3px;
+}
+
+.wrapper-name-text,
+.wrapper-email-text {
+  margin: 0;
+  width: 563px;
+}
+
+.wrapper-message {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.btn-form {
+  border: none;
+  background-color: #4bcaff;
+  padding: 25px 154px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
 }
