@@ -67,12 +67,15 @@ a {
   min-height: 150px;
   background-color: rgba(53, 63, 70, 0.85);
   padding-top: 58px;
-  margin-bottom: 250px;
 }
 
 .wrapper-nav {
   display: flex;
   justify-content: space-between;
+}
+
+.slogan {
+  margin-top: 12%;
 }
 
 .main-header {
