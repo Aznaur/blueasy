@@ -76,7 +76,8 @@ a {
 }
 
 .main-header {
-  min-height: 800px;
+  width: 100%;
+  min-height: 100vh;
   background-image: url("../img/background-header.jpg");
   background-repeat: no-repeat;
   background-position: top center;
